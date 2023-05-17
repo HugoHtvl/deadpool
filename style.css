@@ -1,1 +1,68 @@
+body{
+    background-color: rgb(255 245 238);
+  
+}
 
+nav{
+    background-color:rgb(139,35,35);
+    padding: 32px;  
+    list-style-type: none;
+    display: flex;
+    align-items:stretch;
+    justify-content: space-between;
+}
+
+a:hover{
+    background-color: white;
+    color: rgb(139 35 35);
+    padding: 16px;
+    background-color: rgb(255 245 238);
+    
+}
+  
+
+a{  
+    text-decoration:initial;
+    color: rgb(255 245 238); 
+    font-size: larger;
+
+}
+
+*{
+     font-family:'Condensed Bold,Trebuchet MS,Helvetica,Arial,sans-serif'
+}
+
+p{
+    color: rgb(139,35,35);
+}
+
+nav>img {
+    width: 100px;
+}
+
+footer{
+
+    background-color: rgb(139,35,35);
+    color:rgb(255 245 238);
+}
+
+button{ 
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 500px;
+    height: 40px;
+    color: rgb(255 245 238);
+    background-color: rgb(45, 45, 167);
+    border-radius: 9px;
+}
+
+button>p{
+    color: white;
+    font-size: large;
+   
+ 
+}
+
+h1{
+    color: black;
+}
