@@ -4,12 +4,39 @@ body {
 
 nav{
     background-color:rgb(139,35,35);
-    padding: 32px;  
+    /*padding: 32px; */ 
     list-style-type: none;
     display: flex;
     align-items:stretch;
     justify-content: space-between;
-}   
+    
+}
+
+a:hover{
+    background-color: white;
+    color: rgb(139 35 35);
+    padding: 16px;
+    background-color: rgb(255 245 238);
+    
+}
+  
+
+a{  
+    
+    text-decoration:initial;
+    color: rgb(255 245 238); 
+    font-size: larger;
+
+}
+li{
+    padding: 15px;
+}
+
+#poulet {
+ padding: 0px;
+ width: 5%;
+}
+
 h1 {
     display: flex;
     justify-content: center;
@@ -19,8 +46,18 @@ h1 {
     display: flex;
 }
 #imgCaptainQuizz1 {
-    width: 30%;
+    width: 20%;
 }
+#bouclier {
+  display: flex;
+  flex-direction: column;  
+  width: 5%;
+  margin-top: 5%;
+  margin-left: 20%;
+  justify-content: space-evenly;
+  border: 09px, black, solid;
+  border-radius: 30px;
+  }
 
 #questionQuizz1 {
     display: flex;
@@ -39,7 +76,19 @@ button {
     background-color:rgb(159, 152, 152) ;
     
 }
-
+footer{
+    height: 25px;
+    background-color: rgb(139,35,35);
+    /*color:rgb(255 245 238);*/
+}
+#footerimage{
+    display: flex;
+    width: 5%;
+    justify-content: space-between;
+}
+.footerimage{
+    width:45%;
+}
  
 /*div {
     margin-top: 50%;
