@@ -22,10 +22,9 @@ nav ul {
 }
 
 nav a:hover {
-    background-color: white;
     color: rgb(139 35 35);
-    padding: 16px;
     background-color: rgb(255 245 238);
+    background-size: 100px;
 }
 
 a {
@@ -40,8 +39,6 @@ button p {
 
 nav li img {
     width: 100px;
-    padding : 0;
-    margin: 0;
 }
 
 footer {
@@ -63,8 +60,12 @@ button {
 }
 
 h1 {
-    margin-top: 6%;
-    display: flex;
+    margin: 5%;
+    transform: rotate(-10deg);
+}
+
+.title {
+    display:flex;
     justify-content: center;
 }
 
@@ -73,7 +74,6 @@ h3 img {
     width: 800px;
     padding-top: 10%;
     padding-right: 25%;
-
 }
 
 h3 {
@@ -82,12 +82,13 @@ h3 {
     background-color: rgb(41, 41, 41);
     margin-left: 30%;
     margin-top: 20%;
-
 }
 
 h4 {
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 1% 0 2% 0;
 }
 
 
@@ -96,13 +97,16 @@ h5 {
     justify-content: flex-end;
 }
 
+.class1{
+    background:grey;
+    margin-right: 5%;
+}
+
 .class2 {
-    margin-right: 20%;
+    margin: 0 5% 0 0;
     background-color: rgb(41, 41, 41);
-    margin-bottom: 20%;
     display: flex;
     align-items: center;
-
 }
 
 .class2 p {
@@ -112,26 +116,21 @@ h5 {
     padding: 7px 15px;
     border-radius: 3px;
     width: 350px;
-
-
 }
 
 .class2 p::after {
     content: "";
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-top: 20px solid #d9e2e6;
+    border-top: 20px solid hsl(0, 0%, 93%);
     position: absolute;
-}
-
-
-.class1{
-    background:grey;
-    padding-bottom:5px;
-    background-position: 75%  75%;
 }
 
 .class3{
     background:grey;
-    background-position: 75% 75%;
+}
+
+#gris-clair {
+    padding: 5rem 0 0 0;
+    margin: 0 5rem 5rem 5rem;
 }
