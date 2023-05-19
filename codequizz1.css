@@ -3,35 +3,32 @@ body {
 }
 
 nav {
-    background-color:rgb(139,35,35);
-    /*padding: 32px; */ 
-    list-style-type: none;
+    background-color: rgb(139, 35, 35);
+    margin: 0;
+}
+
+nav ul {
     display: flex;
-    align-items:stretch;
-    justify-content: space-between;  
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
 }
 
-.active:hover {
-    background-color: white;
+nav a:hover {
     color: rgb(139 35 35);
-    padding: 16px;
-    background-color: rgb(255 245 238);  
+    background-color: rgb(255 245 238);
+    background-size: 100px;
 }
-  
-.active {  
-    text-decoration:initial;
-    color: rgb(255 245 238); 
+
+a {
+    text-decoration: initial;
+    color: rgb(255 245 238);
     font-size: larger;
-    font-weight: bold;
 }
 
-li {
-    padding: 15px;
-}
-
-#poulet {
- padding: 0px;
- width: 5%;
+nav li img {
+    width: 100px;
 }
 
 h1 {
@@ -43,8 +40,8 @@ h1 {
     height: 300px;
     width: 1000px;
     display: flex;
-    border: 0px, black, solid;
-    background-color: rgb(41, 41, 41);  
+    background-color: rgb(41, 41, 41);
+    box-shadow: 20px 20px 2px 1px rgb(217 217 217); 
 }
 
 #imgCaptainQuizz1 {
@@ -60,7 +57,6 @@ h1 {
   justify-content: space-evenly;
   border: 09px, black, solid;
   border-radius: 30px;
-  
   }
 
 #questionQuizz1 {
@@ -82,23 +78,18 @@ button {
     background-color:rgb(159, 152, 152) ;  
 }
 
-footer{
-    height: 25px;
-    background-color: rgb(139,35,35);
-    /*color:rgb(255 245 238);*/
+#bonnechance {
+    color: rgb(255 245 238);
 }
 
-#footerimage{
-    display: flex;
-    width: 5%;
-    justify-content: space-between;
+footer {
+    background-color: rgb(139, 35, 35);
+    color: rgb(255 245 238);
+    bottom: 0;
+    padding: 10px;
 }
 
-.footerimage{
-    width:45%;
+footer a img {
+    width: 20px;
 }
  
-/*div {
-    margin-top: 50%;
-    margin-left: 20%;
-}*/
