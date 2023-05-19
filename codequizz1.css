@@ -2,31 +2,30 @@ body {
     background-color: rgb(255 245 238);
 }
 
-nav{
+nav {
     background-color:rgb(139,35,35);
     /*padding: 32px; */ 
     list-style-type: none;
     display: flex;
     align-items:stretch;
-    justify-content: space-between;
-    
+    justify-content: space-between;  
 }
 
-a:hover{
+.active:hover {
     background-color: white;
     color: rgb(139 35 35);
     padding: 16px;
     background-color: rgb(255 245 238);  
 }
   
-a{  
+.active {  
     text-decoration:initial;
     color: rgb(255 245 238); 
     font-size: larger;
-
+    font-weight: bold;
 }
 
-li{
+li {
     padding: 15px;
 }
 
@@ -45,9 +44,7 @@ h1 {
     width: 1000px;
     display: flex;
     border: 0px, black, solid;
-    background-color: rgb(41, 41, 41);
-    
-    
+    background-color: rgb(41, 41, 41);  
 }
 
 #imgCaptainQuizz1 {
