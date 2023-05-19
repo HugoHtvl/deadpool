@@ -46,6 +46,7 @@ h1 {
     text-shadow: grey(217, 217, 217) 1px 0 10px;
     font-family: 'Delicious Handrawn', 'cursive';
     font-size: xx-large;
+    text-shadow: grey 1px 0 10px;
 }
 
 .title {
@@ -97,7 +98,7 @@ h5 {
 }
 
 .class2 img{
-    width: 200%;
+    width: 150%;
     grid-column-start: 2;
     grid-row-end: 2;
     margin-left: 40%;
@@ -123,12 +124,12 @@ h5 {
 .class2 p::after {
     content: ""; 
     position:absolute;
-    right:48%;
+    right:51%;
     bottom: 0rem ;
-    top: 28rem;
+    top: 26rem;
     border-width:60px;
     border-style: solid;
-    border-color:  hsl(0, 29%, 97%) transparent transparent transparent;
+    border-color:  hsl(0, 0%, 93%) transparent transparent transparent;
   }
    
    
@@ -153,11 +154,12 @@ h5 {
 .deadpoolButton2 {
 display: flex;
 justify-content: flex-end;
-margin-bottom: -5%;
+margin-bottom: -6%;
 margin-right: 3em;
 }
 
 button {
+    cursor: pointer;
     width: 20em;
     height: 5em;
     background-color: rgb(139, 35, 35);
