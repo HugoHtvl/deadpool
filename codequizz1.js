@@ -1,14 +1,15 @@
-let yearProposale
 
-while (yearProposale != "1918") {
-yearProposale = parseInt(prompt("what is the year of birth of captain america ?"));
-
-     if (yearProposale < "1918"){
-        alert("it's more");
-    } else if (yearProposale > "1918"){
-        alert("it's less");
-    } else {
-        console.log("error");
-    }
+const buttont = document.querySelectorAll(".buttont");
+for (let i=0; i<buttont.length; i++) {
+buttont[i].addEventListener("click", function() {
+buttont[i].style.color = "black";
+buttont[i].style.backgroundColor = "red";
+});
 }
-alert("win");
+
+const victoire = document.querySelector("#victoire");
+victoire.addEventListener("click", function() {
+victoire.style.color = "black";
+victoire.style.backgroundColor = "green";
+});
+

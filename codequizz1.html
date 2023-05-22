@@ -8,40 +8,37 @@
     <link rel="stylesheet" href="codequizz1.css" />
 </head>
 <body>
-    <nav>   
-        <li><a class="active" href="#">Home</a></li> 
-        <img id="poulet" src="C:\Users\sebas\OneDrive\Bureau\Dossier GIT\deadpool\assets\deadpoule.png">
-        <li><a class="active" href="#">About us</a></li>
-    </nav>
+    <header>
+        <nav>
+          <ul>
+            <li><a class="active" href="#">Accueil</a></li> 
+            <li><img src="assets/deadpoule.png"></li>
+            <li><a href="#">À propos</a></li>
+          </ul>
+        </nav>
+      </header>
     <form>
-        <h1> En quelle année est né le Captain AMERICA ?</h1>
+        <h1 class = "annee"> En quelle année est né le Captain AMERICA ?</h1>
         <div class=" container">
             <img id="imgCaptainQuizz1" src="https://media.discordapp.net/attachments/1101546225527959625/1108338969361518693/Captain.png?width=608&height=884" alt = "Captain AMERICA">
-            <div id = "bouclier">
-                <img src="C:\Users\sebas\OneDrive\Bureau\Dossier GIT\deadpool\assets\imagesLibresDroit\bouclier.png" alt="bouclier">
-                <img src="C:\Users\sebas\OneDrive\Bureau\Dossier GIT\deadpool\assets\imagesLibresDroit\bouclier.png" alt="bouclier">
-                <img src="C:\Users\sebas\OneDrive\Bureau\Dossier GIT\deadpool\assets\imagesLibresDroit\bouclier.png" alt="bouclier">
-            </div>
-            <div id="questionQuizz1">
-                <button type="button">1492</button>            
-                <button type="button">1789</button>
-                <button onclick="location.href='codequizz2.html'"  type="button">1918</button>
+            <div class = "colonnes">
+                    <div><img class = "bouclier" src="assets\imagesLibresDroit\bouclier.png" alt="bouclier"></div>
+                    <div><p class = "buttont">1492</p></div>
+                    <div><img class = "bouclier" src="assets\imagesLibresDroit\bouclier.png" alt="bouclier"></div>
+                    <div><p class = "buttont">1789</p></div>
+                    <div><img class = "bouclier" src="assets\imagesLibresDroit\bouclier.png" alt="bouclier"></div>
+                    <div><p id = "victoire">1918</p></div>
             </div>
         </div> 
+        <p id="bonnechance">Bonnechance</p>
     </form>
-<!--<footer>
-    <div id="footerimage">
-        <img class="footerimage" src="C:\Users\sebas\OneDrive\Bureau\Dossier GIT\deadpool\assets\button-twitter.png" alt="twitter">
-        <img class="footerimage" src="C:\Users\sebas\OneDrive\Bureau\Dossier GIT\deadpool\assets\button-Facebook.png" alt="facebook">
-        <img class="footerimage" src="C:\Users\sebas\OneDrive\Bureau\Dossier GIT\deadpool\assets\button-instagram.png" alt="instagram">
-    </div>
-</footer>-->
 </body>
 <footer>
-    <div id="footerimage">
-        <a href="https://www.facebook.com/DeadpoolFR/" target="_blank"><img src="/assets/button-Facebook.png"></a>
-        <a href="https://www.instagram.com/deadpool/?hl=fr" target="_blank"><img src="/assets/button-instagram.png"></a>
-        <a href="https://twitter.com/Deadpool" target="_blank"><img src="/assets/button-twitter.png"></a>
+    <div >
+        <a class="footerimage" href="https://twitter.com/Deadpool" target="_blank"><img src="assets/button-twitter.png"></a>
+        <a class="footerimage" href="https://www.facebook.com/DeadpoolFR/" target="_blank"><img src="assets/button-Facebook.png"></a>
+        <a class="footerimage" href="https://www.instagram.com/deadpool/?hl=fr" target="_blank"><img src="assets/button-instagram.png"></a>
     </div>
 </footer>
+<script src="codequizz1.js"> </script>
 </html>
