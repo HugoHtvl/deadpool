@@ -1,4 +1,4 @@
-body { height: 200vh;
+body { 
     margin: 0;
     padding: 0;
     background-color:#05161a ;
@@ -21,26 +21,123 @@ body { height: 200vh;
     margin: 0px;
     border: 10px;
     padding: 20px;
+    cursor: pointer;
     
 }
-
-.header svg {
-    z-index: 4;
+.headerMenu {
+    z-index: 2;
     width: 40px;
     height: 40px;
     color: white;
+    cursor: pointer;
+    transition: 0.4s transform linear
 }
 
-.headerMenu {
-    z-index: 2;
+.headerMenu:hover{
+    transform: rotate(10deg);
+
+}
+
+
+.navbar{ position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #05161a;
+color: white;
+z-index: 6; 
+padding: 50px 20px;
+transform: translateX(100%);
+transition: 0.4s transform cubic-bezier(1, -0.1, .03,1.58);
+z-index: 2;
+
+}
+
+.navbar.active {
+    transform: initial;
+}
+
+
+.menuderoulant{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: sans-serif;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    
+}
+
+.navbar li {
+    list-style: none;
+    margin-bottom: 12px;
+    display: flex;
+    text-decoration: none;
+}
+.navbar li a {color: white;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+position: relative;
+}
+
+.navbar li a svg {stroke: white;
+    width: 18px;
+    height: 18px;
+    margin-right: 16px;
+   
+
+}
+
+.navbar li a:after {content: '';
+    height: 1px;
+    width: 0px;
+    background-color: white;
+    position: absolute;
+    bottom: -6px;
+    right: 0;
+    transition: 0.3s width ease-in-out;
+   
+}
+
+.navbar li a:hover:after {width: 100%;
+    left: 0;
+   
+}
+.NavMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+     
+}
+
+.menuOverlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+background-color: #05161a;
+display: none;
+z-index: 1;
+}
+
+.menuOverlay.active {
+    display: block;
 }
 
 #backgroundImage { 
     display:flex;
     justify-content: center;
-    width: 200vh;
+   max-width: 50%;
+    height: auto;
     z-index: 1;
   position: absolute;
   top: 0;
+
 
 }
