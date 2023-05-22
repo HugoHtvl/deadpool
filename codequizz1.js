@@ -9,7 +9,6 @@ buttont[i].style.backgroundColor = "red";
 
 const victoire = document.querySelector("#victoire");
 victoire.addEventListener("click", function() {
-victoire.style.color = "black";
-victoire.style.backgroundColor = "green";
-});
+victoire.
+b});
 
