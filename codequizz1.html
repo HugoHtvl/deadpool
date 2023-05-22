@@ -18,18 +18,16 @@
         </nav>
       </header>
     <form>
-        <h1> En quelle année est né le Captain AMERICA ?</h1>
+        <h1 class = "annee"> En quelle année est né le Captain AMERICA ?</h1>
         <div class=" container">
             <img id="imgCaptainQuizz1" src="https://media.discordapp.net/attachments/1101546225527959625/1108338969361518693/Captain.png?width=608&height=884" alt = "Captain AMERICA">
-            <div id = "bouclier">
-                <img src="assets\imagesLibresDroit\bouclier.png" alt="bouclier">
-                <img src="assets\imagesLibresDroit\bouclier.png" alt="bouclier">
-                <img src="assets\imagesLibresDroit\bouclier.png" alt="bouclier">
-            </div>
-            <div id="questionQuizz1">
-                <button type="button">1492</button>            
-                <button type="button">1789</button>
-                <button onclick="location.href='codequizz2.html'"  type="button">1918</button>
+            <div class = "colonnes">
+                    <div><img class = "bouclier" src="assets\imagesLibresDroit\bouclier.png" alt="bouclier"></div>
+                    <div><p class = "buttont">1492</p></div>
+                    <div><img class = "bouclier" src="assets\imagesLibresDroit\bouclier.png" alt="bouclier"></div>
+                    <div><p class = "buttont">1789</p></div>
+                    <div><img class = "bouclier" src="assets\imagesLibresDroit\bouclier.png" alt="bouclier"></div>
+                    <div><p id = "victoire">1918</p></div>
             </div>
         </div> 
         <p id="bonnechance">Bonnechance</p>
@@ -42,4 +40,5 @@
         <a class="footerimage" href="https://www.instagram.com/deadpool/?hl=fr" target="_blank"><img src="assets/button-instagram.png"></a>
     </div>
 </footer>
+<script src="codequizz1.js"> </script>
 </html>
