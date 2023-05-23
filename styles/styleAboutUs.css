@@ -24,6 +24,10 @@ h1 {
     color: rgb(255 245 238);
 }
 
+.logo {
+    padding: 20px;
+}
+
 .navbar .links {
     display: flex;
     align-items: center;
@@ -39,11 +43,6 @@ a {
     text-decoration: none;
     color: rgb(255 245 238);
     font-size: 1.5rem;
-}
-
-a:hover {
-    background-color: rgb(255 245 238);
-    color: rgb(139, 35, 35);
 }
 
 .aboutUs {
@@ -92,6 +91,8 @@ a:hover {
     height: 300px;
     margin: 20px;
     padding: 20px;
+    border: 5px;
+    border-color: rgb(255 245 238);
 }
 
 .draxImg {
@@ -142,3 +143,28 @@ a:hover {
 .dPoolImg {
     text-align: center;
 }
+
+footer {
+    margin: 0;
+    width: 100%;
+    bottom: 0;
+    padding-right: 20px;
+}
+
+.footerLinks {
+    text-align: right;
+}
+
+.footerLinks:hover {
+
+    color: rgb(139, 35, 35);
+}
+
+/* Rectangle 85 */
+
+/* position: absolute;
+width: 327px;
+height: 100px;
+
+background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.92) 55.73%);
+transform: rotate(180deg); */
