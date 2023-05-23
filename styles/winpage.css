@@ -1,4 +1,5 @@
-body { 
+html, body { 
+    height: 100%;
     margin: 0;
     padding: 0;
     background-color:#05161a ;
@@ -131,17 +132,6 @@ display: none
     display: block;
 }
 
-#backgroundImage { 
-    display:flex;
-    justify-content: center;
-   max-width: 50%;
-    height: auto;
-    z-index: 1;
-  position: absolute;
-  top: 0;
-
-
-}
 
 .navbarClose {
     z-index: 2;
@@ -160,3 +150,18 @@ display: none
 
 }
 
+.backgroundImage { 
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -120px;
+}
+
+#fondTerre {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+
+   
+
+}
