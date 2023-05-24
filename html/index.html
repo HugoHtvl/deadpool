@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yo Deadpool !</title>
+    <link href="newStyle.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--<div class="lineaire-simple" id="fond-noir-top">--->
+      <div id="tour">
+        <!-- image de fond tour Avengers -->
+        <header>
+          <!-- menu burger  -->
+
+          <nav></nav>
+
+          <!--menu burger -->
+        </header>
+        <div id="mcu">
+          <div id="textAccueil">
+            <h1>MARVEL CHICKEN UNIVERSE</h1><br>
+            <p class="textWhite">Il était une fois...</p>
+            <br />
+            <p id ="Multivers" class="textWhite">
+              "Dans notre multivers, Deadpool vient de reçevoir une lettre de
+              notre formateur : le Chicken Master & accessoirement nouvelle recrue des
+              Avengers... Abdou. <br><br>Je t'invite à la lire"
+            </p>
+          </div>
+          <div id="deadpoolAccueil">
+            <img src="/assets/deadpool-accueil.png" id="deadpool"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="fondNoir">
+      <h2>Yo Deadpool</h2><br>
+      <p class="textWhite">
+        "Comment va ?! Alors tu fais toujours pas partie du crew... Viens te
+        consoler en venant manger un bon poulet à la tour Avengers.
+      </p>
+      <br />
+      <p class="textWhite">
+        Je t'y attendrai..."<br><br>"PS : il y a juste quelques gros bras qui posent
+        beaucoup de questions mais tu devrais t'en sortir."
+      </p><br>
+      <h3>Abdou</h3>
+    </div>
+
+    <!---<div class="lineaire-simple" id="fond-noir-bottom">-->
+    <div id="tour-reverse">
+      <h4>Pour y accéder, tu dois répondre à une série de questions, ne te trompe
+        pas sinon je te plombe la face !
+      </h4>
+      <!-- bouton démarrer -->
+      <div class="container">
+        <button class="c-button c-button--gooey">
+          Démarrer
+          <div class="c-button__blobs">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </button>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          style="display: block; height: 0; width: 0"
+        >
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur
+                in="SourceGraphic"
+                stdDeviation="10"
+                result="blur"
+              ></feGaussianBlur>
+              <feColorMatrix
+                in="blur"
+                mode="matrix"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                result="goo"
+              ></feColorMatrix>
+              <feBlend in="SourceGraphic" in2="goo"></feBlend>
+            </filter>
+          </defs>
+        </svg>
+        <!-- fin du bouton démarrer -->
+
+        <footer>
+          <div id="logo">
+            <a href="https://twitter.com/Deadpool" target="_blank"
+              ><img src="assets/logo-twitter.png"
+            /></a>
+            <a href="https://www.facebook.com/DeadpoolFR/" target="_blank"
+              ><img src="assets/logo-facebook.png"
+            /></a>
+            <a href="https://www.instagram.com/deadpool/?hl=fr" target="_blank"
+              ><img src="assets/logo-insta.png"
+            /></a>
+          </div>
+        </footer>
+      </div>
+      <script src="index.js"></script>
+    </div>
+  </body>
+</html>
