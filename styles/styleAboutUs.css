@@ -1,7 +1,9 @@
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    font-family: 'Condensed Bold,Trebuchet MS,Helvetica,Arial,sans-serif';
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Space Mono', monospace;
+    font-size: 20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -12,16 +14,19 @@
 
 body {
     background-color: #05161a;
+    /* max-width: 90%; */
 }
 
 header {
-    position: relative;
-    /* padding: 0 2rem; */
+    max-width: 80%;
 }
 
 h1 {
     text-align: center;
     color: rgb(255 245 238);
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Space Mono', monospace;
+    font-size: 40px;
 }
 
 .logo {
@@ -53,12 +58,14 @@ a {
 }
 
 .wolverine {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     color: rgb(255 245 238);
     background-color: hsl(0, 0%, 83%, 10%);
     line-height: 25px;
     width: 300px;
-    height: 300px;
+    height: 500px;
     margin: 20px;
     padding: 20px;
 }
@@ -69,11 +76,13 @@ a {
 
 .rocket {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     color: rgb(255 245 238);
     background-color: hsl(0, 0%, 83%, 10%);
     line-height: 25px;
     width: 300px;
-    height: 300px;
+    height: 500px;
     margin: 20px;
     padding: 20px;
 }
@@ -84,11 +93,13 @@ a {
 
 .drax {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     color: rgb(255 245 238);
     background-color: hsl(0, 0%, 83%, 10%);
     line-height: 25px;
     width: 300px;
-    height: 300px;
+    height: 500px;
     margin: 20px;
     padding: 20px;
     border: 5px;
@@ -101,11 +112,13 @@ a {
 
 .spiderman {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     color: rgb(255 245 238);
     background-color: hsl(0, 0%, 83%, 10%);
     line-height: 25px;
     width: 300px;
-    height: 300px;
+    height: 500px;
     margin: 20px;
     padding: 20px;
 }
@@ -116,11 +129,13 @@ a {
 
 .thanos {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     color: rgb(255 245 238);
     background-color: hsl(0, 0%, 83%, 10%);
     line-height: 25px;
     width: 300px;
-    height: 300px;
+    height: 500px;
     margin: 20px;
     padding: 20px;
 }
@@ -131,11 +146,13 @@ a {
 
 .dPool {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     color: rgb(255 245 238);
     background-color: hsl(0, 0%, 83%, 10%);
     line-height: 25px;
     width: 300px;
-    height: 300px;
+    height: 500px;
     margin: 20px;
     padding: 20px;
 }
@@ -145,26 +162,30 @@ a {
 }
 
 footer {
-    margin: 0;
-    width: 100%;
+    /* margin: 0; */
+    /* width: 100%; */
+    position: absolute;
     bottom: 0;
     padding-right: 20px;
+    /* max-width: 80%; */
+    text-align: right;
 }
 
 .footerLinks {
     text-align: right;
+    padding: 20px;
+    transition: all .2s ease-in-out;
 }
 
-.footerLinks:hover {
-
-    color: rgb(139, 35, 35);
+.insta:hover {
+    text-align: right;
+    transform: scale(1.5);
 }
 
-/* Rectangle 85 */
+.faceB:hover {
+    transform: scale(1.5);
+}
 
-/* position: absolute;
-width: 327px;
-height: 100px;
-
-background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.92) 55.73%);
-transform: rotate(180deg); */
+.twit:hover {
+    transform: scale(1.5);
+}
