@@ -26,6 +26,10 @@
   cursor: pointer;
 }
 .headerMenu {
+  margin-right:2%;
+  position:fixed;
+  top:0;
+  right:0;
   z-index: 2;
   width: 40px;
   height: 40px;
@@ -133,15 +137,10 @@
   cursor: pointer;
   transition: 0.4s transform linear;
   display: flex;
-  position: absolute;
-  right: 0;
-  margin-right: 68px;
-  top: 35px;
+  position: fixed;
+  right: 2%;
+  top: 0;
   bottom: 24px;
-}
-
-.hidden {
-  display: none;
 }
 /* fin du menu burger */
 
@@ -192,6 +191,7 @@ a {
 }
 
 #mcu {
+  
   display: flex;
   /*grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
@@ -212,6 +212,7 @@ a {
 }
 
 .textAccueil {
+  
   display: flex;
   flex-direction: column;
 }
