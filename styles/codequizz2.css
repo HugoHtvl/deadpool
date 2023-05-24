@@ -4,12 +4,13 @@
     list-style-type: none;
 }
 
+
 body {
-    background-color: rgb(5,22,26);
+    background-color: rgb(5, 22, 26);
     margin: 0;
     height: 100vh;
     width: auto;
-
+    box-sizing: content-box;
 }
 
 
@@ -28,7 +29,8 @@ main h1 {
     font-family: 'Roboto', sans-serif;
     font-family: 'Space Mono', monospace;
     text-align: center;
-    font-size: 40px;
+    font-size: 26px;
+    margin-bottom: 40px;
 }
 
 
@@ -45,7 +47,7 @@ main h1 {
 .container {
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;  
+    display: flex;
 }
 
 
@@ -56,8 +58,8 @@ main h1 {
 
 
 .btn {
-    margin: 0px 25px;
-    bottom: 57px;
+    margin: 12px 15px;
+    bottom: 68px;
     display: inline-block;
     padding: 2rem 3.8rem;
     font-size: 30px;
@@ -66,15 +68,15 @@ main h1 {
     border: 3px solid rgb(213, 26, 34);
     cursor: pointer;
     position: relative;
-    background-color:  transparent;
+    background-color: hsl(40, 100%, 97%, 60%);
     text-decoration: none;
     overflow: hidden;
     z-index: 1;
     font-family: 'Oswald', sans-serif;
     font-family: 'Space Mono', monospace;
 }
-   
-   
+
+
 .btn::before {
     content: "";
     position: absolute;
@@ -95,17 +97,29 @@ main h1 {
 
 
 footer {
-    margin: 0;
-    width: 100%;
+    position: fixed;
     bottom: 0;
+    right: 0;
 }
 
 
 .footerLinks {
-    text-align: right;
+
+    padding: 20px;
+    transition: all .2s ease-in-out;
 }
 
 
-.footerLinks:hover {
-    color: rgb(139, 35, 35);
+.insta:hover {
+    transform: scale(1.5);
+}
+
+
+.faceB:hover {
+    transform: scale(1.5);
+}
+
+
+.twit:hover {
+    transform: scale(1.5);
 }
