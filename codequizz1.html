@@ -15,10 +15,11 @@
         <div class="navbar">
             <div class="logo"> <img src="assets\imagesLibresDroit\logo1.png" alt="deadpoule Logo" height="100px">
             </div>
-            <ul class="links">
-                <li><a class="links" href="home">Accueil</a></li>
-                <li><a class="links" href="aboutUs">A propos</a></li>
-            </ul>
+            <div class="headerMenu" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+            </div>   
         </div>
       </header>
     <form>
@@ -26,20 +27,20 @@
             <div class= "container">
                 <img id="imgCaptainQuizz1" src ="assets\captain-quizz1.png" alt = "Captain AMERICA">
             </div> 
-            <div class = "colonnes">
-                <div><button class = "button1">1492</button></div>
-                <div><button class = "button2">1789</button></div>
-                <div><button class = "button3" onclick="location.href='/codequizz2.html'" type="button">1918</button></div>
+            <div class="questionQuizz1">
+                <button class = "btn">1492</button>
+                <button class = "btn">1789</button>
+                <button class = "winbutton" onclick="openWin()" type="button">1918</button>
             </div>
     </form>
     <footer>
         <div class="footerLinks">
             <ul>
-                <li><a href="https://www.instagram.com/deadpool/?hl=fr"><img src=assets\imagesLibresDroit\logoInsta.png
-                            alt="logo instagram" height="20px"></a></li>
-                <li><a href="https://www.facebook.com/DeadpoolFR/"><img src=assets\imagesLibresDroit\logoFB.png
-                            alt="logo facebook" height="20px"></a></li>
-                <li><a href="https://twitter.com/Deadpool"><img src=assets\imagesLibresDroit\logoTwit.png
+                <li class="insta"><a href="https://www.instagram.com/deadpool/?hl=fr"><img
+                            src=/assets\imagesLibresDroit\logoInsta.png alt="logo instagram" height="20px"></a></li>
+                <li class="faceB"><a href="https://www.facebook.com/DeadpoolFR/"><img
+                            src=/assets\imagesLibresDroit\logoFB.png alt="logo facebook" height="20px"></a></li>
+                <li class="twit"><a href="https://twitter.com/Deadpool"><img src=/assets\imagesLibresDroit\logoTwit.png
                             alt="logo twitter" height="20px"></a></li>
             </ul>
         </div>

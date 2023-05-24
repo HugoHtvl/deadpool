@@ -1,12 +1,17 @@
 
-*{
-    margin:0;
-    padding: 0;
-}
-body {
-    background-color: rgb(5 22 26);
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
+body {
+  background-color: rgb(5,22,26);
+  margin: 0;
+  height: 100vh;
+  width: auto;
+
+}
 .navbar {
 display: flex;
 width: 300px;
@@ -46,108 +51,113 @@ form{
     width: 20%;
 }
 
-.colonnes {
-    display:grid;
-    text-align: center;
-    grid-template-columns: 200px 200px 200px;
-    column-gap: 100px;
-    margin-left: 15%;
-    margin-top: 0px;
-    margin-bottom: 15px;
-    padding-left: 0;
-    padding-top: 0;
-    padding-bottom: 10px;
-    
-    
-
+  /*start-button*/
+.questionQuizz1 {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-spacing: 2rem;
 }
-    /*end container*/
 
-    /*button questions*/
-button {
-    padding-bottom: 25px;
-    margin-bottom: 0px;
-    height: 60px;
-    width: 250px;
-    /*display: inline-block;
-    padding: 0.9rem 1.8rem;*/
-    font-size: 30px;
-    font-weight: 700;
-    color: white;
-    border: 0px solid rgb(252, 70, 100);
-    cursor: pointer;
-    position: relative;
-    background-color: transparent;
-    text-decoration: none;
-    overflow: hidden;
-    font-family: inherit;
-    z-index: 5;
-  }
+.btn {
+  margin: 0px 25px;
+  bottom: 57px;
+  display: inline-block;
+  padding: 2rem 3.8rem;
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+  border: 3px solid rgb(213, 26, 34);
+  cursor: pointer;
+  position: relative;
+  background-color: hsl(40, 100%, 97%, 60%);
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Space Mono', monospace;
+}
+ 
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(213, 26, 34);
+  transform: translateX(-100%);
+  transition: all .3s;
+  z-index: -1;
+}
 
-.button1:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color:gray;
-    transform: translateX(-100%);
-    transition: all .3s;
-    z-index: -1;
-  }
-  
-  .button2:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(154, 65, 80);
-    transform: translateX(-100%);
-    transition: all .3s;
-    z-index: -1;
-  }
+.btn:hover::before {
+  transform: translateX(0);
+}
 
-  .button3:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color:whitesmoke;
-    transform: translateX(-100%);
-    transition: all .3s;
-    z-index: -1;
-  }
-  button:hover::before {
-    transform: translateX(0);
-  }
+.winbutton {
+  margin: 0px 25px;
+  bottom: 57px;
+  display: inline-block;
+  padding: 2rem 3.8rem;
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+  border: 3px solid rgb(213, 26, 34);
+  cursor: pointer;
+  position: relative;
+  background-color: hsl(40, 100%, 97%, 60%);
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Space Mono', monospace;
+}
+ 
+.winbutton::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(213, 26, 34);
+  transform: translateX(-100%);
+  transition: all .3s;
+  z-index: -1;
+}
 
-  .button1{
-background-color: black;
-  }
-
-  .button2 {
-    background-color: rgb(205 36 39);
-  }
-
-  .button3 {
-    color: black;
-    background-color: rgb(217 217 217);
-  }
+.winbutton:hover::before {
+  transform: translateX(0);
+}
     /*end button*/
 
-footer {
-    margin: 0;
-    width: 100%;
-    bottom: 0;
-    padding-right: 20px;
-}
-
-.footerLinks {
-    text-align: right;
-}
+    footer {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+  }
+  
+  
+  .footerLinks {
+  
+      padding: 20px;
+      transition: all .2s ease-in-out;
+  }
+  
+  
+  .insta:hover {
+      transform: scale(1.5);
+  }
+  
+  
+  .faceB:hover {
+      transform: scale(1.5);
+  }
+  
+  
+  .twit:hover {
+      transform: scale(1.5);
+  }
  
