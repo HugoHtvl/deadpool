@@ -6,36 +6,44 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Question 1</title>
     <link rel="stylesheet" href="codequizz1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
-          <ul>
-            <li><a class="active" href="#">Accueil</a></li> 
-            <li><img src="assets/deadpoule.png"></li>
-            <li><a href="#">À propos</a></li>
-          </ul>
-        </nav>
+        <div class="navbar">
+            <div class="logo"> <img src="assets\imagesLibresDroit\logo1.png" alt="deadpoule Logo" height="100px">
+            </div>
+            <ul class="links">
+                <li><a class="links" href="home">Accueil</a></li>
+                <li><a class="links" href="aboutUs">A propos</a></li>
+            </ul>
+        </div>
       </header>
     <form>
         <h1 class = "annee"> En quelle année est né le Captain AMERICA ?</h1>
-        <div class= "container">
-            <img id="imgCaptainQuizz1" src="assets\captain-quizz1.png" alt = "Captain AMERICA">
+            <div class= "container">
+                <img id="imgCaptainQuizz1" src ="assets\captain-quizz1.png" alt = "Captain AMERICA">
+            </div> 
             <div class = "colonnes">
-                    <div><button class = "buttont">1492</button></div>
-                    <div><button class = "buttont">1789</button></div>
-                    <div><button onclick="location.href='/codequizz2.html'" type="button">1918</button></div>
+                <div><button class = "button1">1492</button></div>
+                <div><button class = "button2">1789</button></div>
+                <div><button class = "button3" onclick="location.href='/codequizz2.html'" type="button">1918</button></div>
             </div>
-        </div> 
-        <p id="bonnechance">Bonnechance</p>
     </form>
+    <footer>
+        <div class="footerLinks">
+            <ul>
+                <li><a href="https://www.instagram.com/deadpool/?hl=fr"><img src=assets\imagesLibresDroit\logoInsta.png
+                            alt="logo instagram" height="20px"></a></li>
+                <li><a href="https://www.facebook.com/DeadpoolFR/"><img src=assets\imagesLibresDroit\logoFB.png
+                            alt="logo facebook" height="20px"></a></li>
+                <li><a href="https://twitter.com/Deadpool"><img src=assets\imagesLibresDroit\logoTwit.png
+                            alt="logo twitter" height="20px"></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
-<footer>
-    <div >
-        <a class="footerimage" href="https://twitter.com/Deadpool" target="_blank"><img src="assets/button-twitter.png"></a>
-        <a class="footerimage" href="https://www.facebook.com/DeadpoolFR/" target="_blank"><img src="assets/button-Facebook.png"></a>
-        <a class="footerimage" href="https://www.instagram.com/deadpool/?hl=fr" target="_blank"><img src="assets/button-instagram.png"></a>
-    </div>
-</footer>
 <script src="codequizz1.js"> </script>
 </html>
