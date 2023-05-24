@@ -1,0 +1,328 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  background-color: rgb(5,22,26);
+  margin: 0;
+  height: 100vh;
+  width: auto;
+
+}
+* {
+  margin: 0;
+  /* margin: 0 auto; */
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Space Mono', monospace;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .aboutUs {
+      display: flex;
+  }
+}
+
+body {
+  background-color: #05161a;
+  /* max-width: 90%; */
+}
+
+/* nav bar de Nayan */
+.header {
+  margin: 20px;
+  height: 50px;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.header img {
+  z-index: 3;
+  max-height: 80px;
+  margin: 0px;
+  border: 10px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.headerMenu {
+  margin-right: 2%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s transform linear;
+}
+
+/* ICI */
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: #05161a 0.4;
+  color: white;
+  z-index: 6;
+  padding: 50px 20px;
+  transform: translateX(100%);
+  transition: 0.4s transform cubic-bezier(1, -0.1, .03, 1.58);
+  z-index: 2;
+  position: fixed;
+}
+
+.navbar.active {
+  transform: initial;
+}
+
+.menuderoulant {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: sans-serif;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background-color: rgba(182, 182, 182, 0.2);
+}
+
+.navbar li {
+  background-color: #05161a 0.2;
+  list-style: none;
+  margin-bottom: 12px;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar li a {
+  color: whitesmoke;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 25px;
+  position: relative;
+  border: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+
+}
+
+.navbar li a svg {
+  stroke: whitesmoke;
+  width: 18px;
+  height: 18px;
+  margin-right: 16px;
+}
+
+.navbar li a:after {
+  content: '';
+  height: 1px;
+  width: 0px;
+  background-color: whitesmoke;
+  position: absolute;
+  bottom: -6px;
+  right: 0;
+  transition: 0.3s width ease-in-out;
+}
+
+.navbar li a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.NavMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.menuOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #05161a;
+  display: none;
+}
+
+.menuOverlay.active {
+  display: block;
+}
+
+.navbarClose {
+ 
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s transform linear;
+  display: flex;
+  position: fixed;
+  right: 2%;
+  top: 0;
+  bottom: 24px;
+
+}
+
+.links {
+    color:whitesmoke;
+    text-align: right;
+}
+
+h1 {
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    font-family: Space-Mono, monospace;
+}
+
+
+form{
+    width: 100%;
+    height: 100%;
+}
+
+    /*debut container*/
+.container {
+    height: 500px;
+    background-image: url("./assets/fond-captain.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex; 
+    z-index: 1; 
+
+}
+
+#imgCaptainQuizz1 {
+    width: 20%;
+}
+
+  /*start-button*/
+.questionQuizz1 {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-spacing: 2rem;
+}
+
+.btn {
+  margin: 0px 25px;
+  bottom: 57px;
+  display: inline-block;
+  padding: 2rem 3.8rem;
+  font-size: 30px;
+  font-weight: 800;
+  color: whitesmoke;
+  border: 3px solid rgb(213, 26, 34);
+  cursor: pointer;
+  position: relative;
+  background-color: hsl(40, 100%, 97%, 60%);
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Space Mono', monospace;
+}
+ 
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(213, 26, 34);
+  transform: translateX(-100%);
+  transition: all .3s;
+  z-index: -1;
+}
+
+.btn:hover::before {
+  transform: translateX(0);
+}
+
+.winbutton {
+  margin: 0px 25px;
+  bottom: 57px;
+  display: inline-block;
+  padding: 2rem 3.8rem;
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+  border: 3px solid rgb(213, 26, 34);
+  cursor: pointer;
+  position: relative;
+  background-color: hsl(40, 100%, 97%, 60%);
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Space Mono', monospace;
+}
+ 
+.winbutton::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(213, 26, 34);
+  transform: translateX(-100%);
+  transition: all .3s;
+  z-index: -1;
+}
+
+.winbutton:hover::before {
+  transform: translateX(0);
+}
+    /*end button*/
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+  }
+  
+  
+  .footerLinks {
+  
+      padding: 20px;
+      transition: all .2s ease-in-out;
+  }
+  
+  
+  .insta:hover {
+      transform: scale(1.5);
+  }
+  
+  
+  .faceB:hover {
+      transform: scale(1.5);
+  }
+  
+  
+  .twit:hover {
+      transform: scale(1.5);
+  }
+ 
