@@ -183,16 +183,19 @@ body {
 
 }
 
+ /*fin navbar*/
 .links {
     color:whitesmoke;
     text-align: right;
 }
 
 h1 {
-    color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    font-family: Space-Mono, monospace;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Space Mono', monospace;
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 40px;
 }
 
 
@@ -203,7 +206,7 @@ form{
 
     /*debut container*/
 .container {
-    height: 500px;
+    height: 58vh;
     background-image: url("/assets/fond-captain.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -213,7 +216,7 @@ form{
 }
 
 #imgCaptainQuizz1 {
-    width: 20%;
+    width: 15%;
 }
 
   /*start-button*/
@@ -226,44 +229,8 @@ form{
 }
 
 .btn {
-  margin: 0px 25px;
-  bottom: 57px;
-  display: inline-block;
-  padding: 2rem 3.8rem;
-  font-size: 30px;
-  font-weight: 800;
-  color: whitesmoke;
-  border: 3px solid rgb(213, 26, 34);
-  cursor: pointer;
-  position: relative;
-  background-color: hsl(40, 100%, 97%, 60%);
-  text-decoration: none;
-  overflow: hidden;
-  z-index: 1;
-  font-family: 'Oswald', sans-serif;
-  font-family: 'Space Mono', monospace;
-}
- 
-.btn::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(213, 26, 34);
-  transform: translateX(-100%);
-  transition: all .3s;
-  z-index: -1;
-}
-
-.btn:hover::before {
-  transform: translateX(0);
-}
-
-.winbutton {
-  margin: 0px 25px;
-  bottom: 57px;
+  margin: 12px 15px;
+  bottom: 68px;
   display: inline-block;
   padding: 2rem 3.8rem;
   font-size: 30px;
@@ -279,8 +246,9 @@ form{
   font-family: 'Oswald', sans-serif;
   font-family: 'Space Mono', monospace;
 }
- 
-.winbutton::before {
+
+
+.btn::before {
   content: "";
   position: absolute;
   left: 0;
@@ -293,9 +261,11 @@ form{
   z-index: -1;
 }
 
-.winbutton:hover::before {
+
+.btn:hover::before {
   transform: translateX(0);
 }
+
     /*end button*/
 
     footer {
