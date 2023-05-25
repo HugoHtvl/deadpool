@@ -171,11 +171,12 @@ h1 {
 
 p {
     
-    height :85px;
+    height :100px;
     width: 400px;
     color: whitesmoke;
     font-family: 'Roboto', sans-serif;
     font-family: 'Space Mono', monospace;
+    font-size: 25px;
     margin-left: 34%;
     margin-top: 15px;
     border-left: 3px whitesmoke solid;
@@ -187,7 +188,7 @@ p {
 #deadpool{
     width: 20%;
     float: right;
-    margin-right: 200px;
+    margin-right: 150px;
     margin-bottom: 50px;
 }
 
