@@ -14,7 +14,6 @@ body {
 }
 
 
-
 .header {
     margin: 20px;
     height: 50px;
@@ -74,7 +73,7 @@ body {
     padding: 0;
     margin: 0;
     list-style: none;
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
     margin-top: 24px;
     margin-bottom: 24px;
     -webkit-backdrop-filter: blur(15px);
@@ -180,7 +179,7 @@ main h1 {
 .mainimage {
     height: 58vh;
     width: auto;
-    background-image: url("../assets/fond-kfc.jpg");
+    background-image: url("/assets/fond-marvel-quizz.jpg");
     background-size: cover;
     text-align: center;
     background-repeat: no-repeat;
@@ -194,7 +193,7 @@ main h1 {
 }
 
 
-.questionQuizz3 {
+.questionQuizz2 {
     text-align: center;
     border-spacing: 2rem;
 }

@@ -7,7 +7,7 @@
 body {
     background-color: rgb(5,22,26);
     margin: 0;
-    height: 100vh;
+    height: 50vh;
     width: auto;
 } 
 
@@ -69,7 +69,8 @@ body {
     padding: 0;
     margin: 0;
     list-style: none;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
+  font-family: 'Space Mono', monospace;
     margin-top: 24px;
     margin-bottom: 24px;
     -webkit-backdrop-filter: blur(15px);
@@ -147,7 +148,6 @@ body {
   }
   
   .navbarClose {
-   
     z-index: 2;
     width: 40px;
     height: 40px;
@@ -159,8 +159,8 @@ body {
     right: 2%;
     top: 0;
     bottom: 24px;
-  
   }
+
 h1 {
     color: whitesmoke;
     display: flex;
@@ -171,7 +171,7 @@ h1 {
 
 p {
     
-    height :85px;
+    height :75px;
     width: 400px;
     color: whitesmoke;
     font-family: 'Roboto', sans-serif;
@@ -183,52 +183,115 @@ p {
     padding-left: 10px;
 }
 
-
+ /*image deadpool*/
 #deadpool{
-    width: 20%;
+    width: 15%;
     float: right;
-    margin-right: 200px;
-    margin-bottom: 50px;
+    margin-right: 220px;
+    margin-bottom: 52px;
 }
 
-.reessayer { 
-    font-weight: bold;
-    font-size: 16px;
-    color: #d51a22;
-    height: 50px;
-    width: 160px;
-    margin-top: 200px;
-    margin-left: 43%;
-    justify-content: center;
-    background-color: white;
-    border: 4px solid #d51a22;
-    letter-spacing: 2px;
+/*button REESSAYER*/
+.container {
+  margin-left: 420px;
+  margin-top: 0;
+  padding: 15%;
+  display: flex;
+  justify-content: center;
 }
 
+.c-button {
+  color: #000;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 0.9em 1.6em;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+}
+
+.c-button--gooey {
+  color: #d51a22;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 4px solid #d51a22;
+  border-radius: 0;
+  position: relative;
+  transition: all 700ms ease;
+}
+
+.c-button--gooey .c-button__blobs {
+  height: 100%;
+  filter: url(#goo);
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: -3px;
+  right: -1px;
+  z-index: -1;
+}
+
+.c-button--gooey .c-button__blobs div {
+  background-color: #d51a22;
+  width: 34%;
+  height: 100%;
+  border-radius: 100%;
+  position: absolute;
+  transform: scale(1.4) translateY(125%) translateZ(0);
+  transition: all 700ms ease;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(1) {
+  left: -5%;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(2) {
+  left: 30%;
+  transition-delay: 60ms;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(3) {
+  left: 66%;
+  transition-delay: 25ms;
+}
+
+.c-button--gooey:hover {
+  color: #fff;
+}
+
+.c-button--gooey:hover .c-button__blobs div {
+  transform: scale(1.4) translateY(0) translateZ(0);
+}
+
+/*FOOTER*/
 footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 
 
 .footerLinks {
 
-    padding: 20px;
-    transition: all .2s ease-in-out;
+  padding: 20px;
+  transition: all .2s ease-in-out;
 }
 
 
 .insta:hover {
-    transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 
 .faceB:hover {
-    transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 
 .twit:hover {
-    transform: scale(1.5);
+  transform: scale(1.5);
 }
