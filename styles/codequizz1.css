@@ -13,21 +13,6 @@ body {
   box-sizing: content-box;
 }
 
-/* {
-  margin: 0;
-  /* margin: 0 auto; 
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Space Mono', monospace;
-  font-size: 20px;
-}*/
-
-/*@media screen and (max-width: 600px) {
-  .aboutUs {
-      display: flex;
-  }*/
-
-
 /* nav bar de Nayan */
 .header {
   margin: 20px;
@@ -86,7 +71,8 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Space Mono', monospace;
   margin-top: 24px;
   margin-bottom: 24px;
   -webkit-backdrop-filter: blur(15px);
