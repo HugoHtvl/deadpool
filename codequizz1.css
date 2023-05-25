@@ -1,45 +1,33 @@
 
-*{
-    margin:0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
+
 body {
-    background-color: rgb(5 22 26);
+  background-color: rgb(5,22,26);
+  margin: 0;
+  height: 100vh;
+  width: auto;
+
+}
+.navbar {
+display: flex;
+width: 300px;
+justify-content: space-between;
 }
 
-nav {
-    background-color: rgb(139, 35, 35);
-    margin: 0;
-}
-
-nav ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0;
-}
-
-nav a:hover {
-    color: rgb(139 35 35);
-    background-color: rgb(255 245 238);
-    background-size: 100px;
-}
-
-a {
-    text-decoration: initial;
-    color: rgb(255 245 238);
-    font-size: larger;
-}
-
-nav li img {
-    width: 100px;
+.links {
+    color:beige;
+    text-align: right;
 }
 
 h1 {
     color: beige;
     display: flex;
     justify-content: center;
+    font-family: Space-Mono, monospace;
 }
 
 
@@ -48,83 +36,128 @@ form{
     height: 100%;
 }
 
-
+    /*debut container*/
 .container {
+    height: 500px;
     background-image: url("./assets/fond-captain.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;   
+    display: flex; 
+    z-index: 1; 
+
 }
 
 #imgCaptainQuizz1 {
     width: 20%;
 }
 
-.colonnes {
-    padding-left: 200px;
-    padding-top: 15%;
-    display:grid;
-    grid-template-columns: 50px 50px 50px;
-    column-gap: 100px;
+  /*start-button*/
+.questionQuizz1 {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-spacing: 2rem;
 }
 
- /*button questions*/
+.btn {
+  margin: 0px 25px;
+  bottom: 57px;
+  display: inline-block;
+  padding: 2rem 3.8rem;
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+  border: 3px solid rgb(213, 26, 34);
+  cursor: pointer;
+  position: relative;
+  background-color: hsl(40, 100%, 97%, 60%);
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Space Mono', monospace;
+}
+ 
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(213, 26, 34);
+  transform: translateX(-100%);
+  transition: all .3s;
+  z-index: -1;
+}
 
-button {
-    background: #fff;
-    border: none;
-    padding: 10px 20px;
-    display: inline-block;
-    font-size: 15px;
-    font-weight: 600;
-    width: 120px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transform: skew(-21deg);
+.btn:hover::before {
+  transform: translateX(0);
+}
+
+.winbutton {
+  margin: 0px 25px;
+  bottom: 57px;
+  display: inline-block;
+  padding: 2rem 3.8rem;
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+  border: 3px solid rgb(213, 26, 34);
+  cursor: pointer;
+  position: relative;
+  background-color: hsl(40, 100%, 97%, 60%);
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Space Mono', monospace;
+}
+ 
+.winbutton::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(213, 26, 34);
+  transform: translateX(-100%);
+  transition: all .3s;
+  z-index: -1;
+}
+
+.winbutton:hover::before {
+  transform: translateX(0);
+}
+    /*end button*/
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      right: 0;
   }
   
-span {
-    display: inline-block;
-    transform: skew(21deg);
-    }
-
-button:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 100%;
-    left: 0;
-    background: rgb(205, 36, 39);
-    opacity: 0;
-    z-index: -1;
-    transition: all 0.5s;
+  
+  .footerLinks {
+  
+      padding: 20px;
+      transition: all .2s ease-in-out;
   }
   
-  button:hover {
-    color: #fff;
+  
+  .insta:hover {
+      transform: scale(1.5);
   }
   
-  button:hover::before {
-    left: 0;
-    right: 0;
-    opacity: 1;
+  
+  .faceB:hover {
+      transform: scale(1.5);
   }
-  /*end button*/
-
-#bonnechance {
-    opacity: 0;
-    color: rgb(255 245 238);
-}
-
-footer {
-    background-color: rgb(139, 35, 35);
-    color: rgb(255 245 238);
-    bottom: 0;
-    padding: 10px;
-}
-
-footer a img {
-    width: 20px;
-}
+  
+  
+  .twit:hover {
+      transform: scale(1.5);
+  }
  
