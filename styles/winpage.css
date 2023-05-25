@@ -4,13 +4,12 @@ body {
   margin: 0;
   padding: 0;
   background-color: #05161a;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  
 }
 
-@media screen and (max-width: 600px) {
-  .aboutUs {
-    display: flex;
-  }
-}
+
 
 .header {
   margin: 20px;
@@ -200,6 +199,7 @@ body {
   background-color: white; /* couleur de la ligne */
   margin-left: 100px;
   margin-top: 200px;
+  margin-bottom: 50px;
 }
 
 #bravoBg {
@@ -231,6 +231,7 @@ body {
   margin-top: 200px;
   position: absolute;
   right: 100px;
+  margin-bottom: 50px;
 }
 
 .backgroundImage {
@@ -251,7 +252,7 @@ body {
   width: 800px;
   margin-left: 50px;
   position: absolute;
-  margin-top: 354px;
+  margin-top: 371px;
 }
 
 footer {
