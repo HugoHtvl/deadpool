@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300&display=swap");
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 414px) {
   #mcu {
     margin-top: 20%;
   }
@@ -221,7 +221,7 @@ a {
       rgb(0 0 0 / 0.5) 30%,
       rgb(0 0 0/ 0)
     ),
-    url(assets/tour-accueil-flou.png);
+    url(../assets/tour-accueil-flou.png);
   height: 100vh;
   background-size: cover;
   object-fit: contain;
@@ -234,7 +234,7 @@ a {
       rgb(0 0 0 / 0.5) 30%,
       rgb(0 0 0/ 0)
     ),
-    url(assets/tour-accueil-flou-reverse.png);
+    url(../assets/tour-accueil-flou-reverse.png);
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
