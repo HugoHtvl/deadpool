@@ -204,7 +204,7 @@ form{
     /*debut container*/
 .container {
     height: 500px;
-    background-image: url("./assets/fond-captain.jpg");
+    background-image: url("/assets/fond-captain.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex; 
