@@ -1,3 +1,4 @@
+// JS de Nayan nav burger
 function toggleMenu() {
     const navbar = document.querySelector('.navbar');
     const menuOverlay = document.querySelector('menuOverlay');
@@ -10,7 +11,7 @@ function toggleMenu() {
         menuOverlay.classList.add('active');
     }
 }
-
+// JS Hugo burger
 const headerOn = document.querySelector(".headerMenu");
 const headerOff = document.querySelector(".navbarClose");
 
