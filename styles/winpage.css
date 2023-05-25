@@ -11,11 +11,7 @@ body {
   
 }
 
-@media screen and (max-width: 600px) {
-  .aboutUs {
-    display: flex;
-  }
-}
+
 
 
 
@@ -297,4 +293,8 @@ footer {
   transform: scale(1.5);
 }
 
-
+@media screen and (max-width: 600px) {
+  .aboutUs {
+    display: flex;
+  }
+}
