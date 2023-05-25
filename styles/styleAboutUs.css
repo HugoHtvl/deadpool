@@ -1,6 +1,5 @@
 * {
     margin: 0;
-    /* margin: 0 auto; */
     padding: 0;
     font-family: 'Roboto', sans-serif;
     font-family: 'Space Mono', monospace;
@@ -15,10 +14,10 @@
 
 body {
     background-color: #05161a;
-    /* max-width: 90%; */
 }
 
-/* nav bar de Nayan */
+/* Burger menu */
+
 .header {
     margin: 20px;
     height: 50px;
@@ -39,13 +38,6 @@ body {
 }
 
 .headerMenu {
-    /* z-index: 2;
-    width: 40px;
-    height: 40px;
-    color: white;
-    cursor: pointer;
-    transition: 0.4s transform linear */
-
     margin-right: 2%;
     position: fixed;
     top: 0;
@@ -56,10 +48,8 @@ body {
     color: white;
     cursor: pointer;
     transition: 0.4s transform linear;
-
 }
 
-/* ICI */
 .navbar {
     position: fixed;
     top: 0;
@@ -87,11 +77,6 @@ body {
     font-family: sans-serif;
     margin-top: 24px;
     margin-bottom: 24px;
-    /* background: black;
-    backdrop-filter: blur(1.5rem); */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     background-color: rgba(182, 182, 182, 0.2);
@@ -118,8 +103,6 @@ body {
     border: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
-
-
 }
 
 .navbar li a svg {
@@ -167,19 +150,6 @@ body {
 }
 
 .navbarClose {
-    /* z-index: 2;
-    width: 40px;
-    height: 40px;
-    color: white;
-    cursor: pointer;
-    transition: 0.4s transform linear;
-    display: flex;
-    position: fixed;
-    right: 0;
-    margin-right: 68px;
-    top: 35px;
-    bottom: 24px; */
-
     z-index: 2;
     width: 40px;
     height: 40px;
@@ -191,35 +161,9 @@ body {
     right: 2%;
     top: 0;
     bottom: 24px;
-
 }
 
-
-/* old nav bar */
-/* header {
-    max-width: 80%;
-} */
-
-/* .logo {
-    padding: 20px;
-}
-
-.navbar .links {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    list-style: none;
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(255 245 238);
-    font-size: 1.5rem;
-} */
+/* Code for main body */
 
 h1 {
     text-align: center;
@@ -339,6 +283,8 @@ h1 {
 .dPoolImg {
     text-align: center;
 }
+
+/* Footer avec les logos reseaux sociaux */
 
 footer {
     position: fixed;
