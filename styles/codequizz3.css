@@ -180,7 +180,7 @@ main h1 {
 .mainimage {
     height: 58vh;
     width: auto;
-    background-image: url("/assets/fond-kfc.jpg");
+    background-image: url("../assets/fond-kfc.jpg");
     background-size: cover;
     text-align: center;
     background-repeat: no-repeat;

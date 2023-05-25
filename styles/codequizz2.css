@@ -179,7 +179,7 @@ main h1 {
 .mainimage {
     height: 58vh;
     width: auto;
-    background-image: url("/assets/fond-marvel-quizz.jpg");
+    background-image: url("../assets/fond-marvel-quizz.jpg");
     background-size: cover;
     text-align: center;
     background-repeat: no-repeat;
