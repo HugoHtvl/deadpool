@@ -4,9 +4,14 @@ body {
   margin: 0;
   padding: 0;
   background-color: #05161a;
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  
+ 
+
+}
+
+@media screen and (max-width: 600px) {
+  .aboutUs {
+    display: flex;
+  }
 }
 
 
@@ -222,6 +227,17 @@ h1 {
   margin-left: 100px;
   margin-top: 200px;
   margin-bottom: 50px;
+  position: absolute;
+}
+
+#verticalBarreRight {
+  width: 2.5px; /* largeur de la ligne */
+  height: 300px; /* hauteur de la ligne */
+  background-color: white; /* couleur de la ligne */
+  margin-top: 200px;
+  position: absolute;
+  right: 100px;
+  margin-bottom: 50px;
 }
 
 #bravoBg {
@@ -238,15 +254,7 @@ h1 {
 
 
 
-#verticalBarreRight {
-  width: 2.5px; /* largeur de la ligne */
-  height: 300px; /* hauteur de la ligne */
-  background-color: white; /* couleur de la ligne */
-  margin-top: 200px;
-  position: absolute;
-  right: 100px;
-  margin-bottom: 50px;
-}
+
 
 
 
