@@ -1,13 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Space+Mono&display=swap" );
+
 html,
 body {
   height: 100%;
   margin: 0;
   padding: 0;
   background-color: #05161a;
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
+
   
 }
+
+
 
 
 
@@ -75,7 +79,6 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
-  font-family: sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
   /* background: black;
@@ -86,6 +89,7 @@ body {
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
   background-color: rgba(182, 182, 182, 0.2);
+  font-family: roboto, sans-serif;
 }
 
 .navbar li {
@@ -182,23 +186,43 @@ body {
   bottom: 24px;
 }
 
-.winTxt {
-  text-align: center;
-  align-items: center;
-  display: flex;
+h1 {
+    font-size: 150px;
+    margin-top: 100px;
+    text-align: center;
+    color: whitesmoke;
+    position: relative;
+    font-family: oswald, sans-serif;
+    
 }
 
-.winTxt h1 {
-  text-align: center;
-  align-items: center;
+
+
+p { font-size: 50px;
+    position: relative;
+    margin-bottom: 200px;
+    font-family: roboto;
+
+
 }
 
 #verticalBarreLeft {
-  width: 5px; /* largeur de la ligne */
-  height: 300px; /* hauteur de la ligne */
+  width: 3px; /* largeur de la ligne */
+  height: 400px; /* hauteur de la ligne */
   background-color: white; /* couleur de la ligne */
   margin-left: 100px;
   margin-top: 200px;
+  margin-bottom: 50px;
+  position: absolute;
+}
+
+#verticalBarreRight {
+  width: 2.5px; /* largeur de la ligne */
+  height: 400px; /* hauteur de la ligne */
+  background-color: white; /* couleur de la ligne */
+  margin-top: 200px;
+  position: absolute;
+  right: 100px;
   margin-bottom: 50px;
 }
 
@@ -209,36 +233,21 @@ body {
   border: 15px;
   margin-left: 500px;
   margin-right: 500px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin-top: 200px;
 }
 
-#victoire {
-  text-align: center;
-  align-items: center;
-  color: white;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  margin-top: 40px;
-  align-items: center;
-}
 
-#verticalBarreRight {
-  width: 2.5px; /* largeur de la ligne */
-  height: 300px; /* hauteur de la ligne */
-  background-color: white; /* couleur de la ligne */
-  margin-top: 200px;
-  position: absolute;
-  right: 100px;
-  margin-bottom: 50px;
-}
+
+
+
+
+
 
 .backgroundImage {
   width: 100%;
   height: 100%;
   position: relative;
-  top: -120px;
+  top: -130px;
 }
 
 #fondTerre {
@@ -252,8 +261,10 @@ body {
   width: 800px;
   margin-left: 50px;
   position: absolute;
-  margin-top: 371px;
+  margin-top: 592px;
 }
+
+
 
 footer {
   position: fixed;
@@ -280,4 +291,10 @@ footer {
 
 .twit:hover {
   transform: scale(1.5);
+}
+
+@media screen and (max-width: 600px) {
+  .aboutUs {
+    display: flex;
+  }
 }

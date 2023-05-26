@@ -8,28 +8,9 @@
 body {
   background-color: rgb(5,22,26);
   margin: 0;
-  height: 100vh;
+  height: 75vh;
   width: auto;
-
-}
-* {
-  margin: 0;
-  /* margin: 0 auto; */
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Space Mono', monospace;
-  font-size: 20px;
-}
-
-@media screen and (max-width: 600px) {
-  .aboutUs {
-      display: flex;
-  }
-}
-
-body {
-  background-color: #05161a;
-  /* max-width: 90%; */
+  box-sizing: content-box;
 }
 
 /* nav bar de Nayan */
@@ -90,7 +71,8 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Space Mono', monospace;
   margin-top: 24px;
   margin-bottom: 24px;
   -webkit-backdrop-filter: blur(15px);
@@ -168,7 +150,6 @@ body {
 }
 
 .navbarClose {
- 
   z-index: 2;
   width: 40px;
   height: 40px;
@@ -206,8 +187,9 @@ form{
 
     /*debut container*/
 .container {
-    height: 58vh;
-    background-image: url("/assets/fond-captain.jpg");
+    height: 55vh;
+    width: auto;
+    background-image: url("../assets/fond-captain.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex; 
