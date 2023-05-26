@@ -5,6 +5,13 @@
   list-style-type: none;
 }
 
+
+@media screen and (max-width: 700px) {
+  #imgCaptainQuizz1 {
+    display:none ;
+  }
+}
+
 body {
   background-color: rgb(5,22,26);
   margin: 0;
@@ -13,22 +20,7 @@ body {
   box-sizing: content-box;
 }
 
-/* {
-  margin: 0;
-  /* margin: 0 auto; 
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Space Mono', monospace;
-  font-size: 20px;
-}*/
-
-/*@media screen and (max-width: 600px) {
-  .aboutUs {
-      display: flex;
-  }*/
-
-
-/* nav bar de Nayan */
+/* DEBUT NAVBAR */
 .header {
   margin: 20px;
   height: 50px;
@@ -82,16 +74,21 @@ body {
   transform: initial;
 }
 
-.menuderoulant {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  font-family: sans-serif;
-  margin-top: 24px;
-  margin-bottom: 24px;
-  -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(15px);
-  background-color: rgba(182, 182, 182, 0.2);
+  .menuderoulant {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: sans-serif;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    /* background: black;
+    backdrop-filter: blur(1.5rem); */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    background-color: rgba(182, 182, 182, 0.2);
 }
 
 .navbar li {
@@ -115,8 +112,6 @@ body {
   border: 20px;
   margin-top: 50px;
   margin-bottom: 50px;
-
-
 }
 
 .navbar li a svg {
@@ -175,14 +170,9 @@ body {
   right: 2%;
   top: 0;
   bottom: 24px;
-
 }
 
  /*fin navbar*/
-.links {
-    color:whitesmoke;
-    text-align: right;
-}
 
 h1 {
   color: #fff;
@@ -193,26 +183,23 @@ h1 {
   margin-bottom: 40px;
 }
 
-
-form{
-    width: 100%;
-    height: 100%;
-}
-
     /*debut container*/
 .container {
-    height: 55vh;
+    height: 58vh;
     width: auto;
     background-image: url("../assets/fond-captain.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     display: flex; 
     z-index: 1; 
-
 }
 
 #imgCaptainQuizz1 {
-    width: 15%;
+  display:block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 200px;
 }
 
   /*start-button*/
@@ -221,6 +208,8 @@ form{
   text-align: center;
   display: flex;
   justify-content: center;
+  flex-direction: row;
+  flex-flow: wrap;
   border-spacing: 2rem;
 }
 
@@ -243,7 +232,6 @@ form{
   font-family: 'Space Mono', monospace;
 }
 
-
 .btn::before {
   content: "";
   position: absolute;
@@ -256,7 +244,6 @@ form{
   transition: all .3s;
   z-index: -1;
 }
-
 
 .btn:hover::before {
   transform: translateX(0);
