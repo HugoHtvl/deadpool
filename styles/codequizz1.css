@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap%22");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300&display=swap%22");
 
 * {
   margin: 0;
@@ -5,15 +7,14 @@
   list-style-type: none;
 }
 
-
 @media screen and (max-width: 700px) {
   #imgCaptainQuizz1 {
-    display:none ;
+    display: none;
   }
 }
 
 body {
-  background-color: rgb(5,22,26);
+  background-color: rgb(5, 22, 26);
   margin: 0;
   height: 75vh;
   width: auto;
@@ -65,7 +66,7 @@ body {
   z-index: 6;
   padding: 50px 20px;
   transform: translateX(100%);
-  transition: 0.4s transform cubic-bezier(1, -0.1, .03, 1.58);
+  transition: 0.4s transform cubic-bezier(1, -0.1, 0.03, 1.58);
   z-index: 2;
   position: fixed;
 }
@@ -78,14 +79,13 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
   background-color: rgba(182, 182, 182, 0.2);
 }
-
 
 .navbar li {
   background-color: #05161a 0.2;
@@ -118,7 +118,7 @@ body {
 }
 
 .navbar li a:after {
-  content: '';
+  content: "";
   height: 1px;
   width: 0px;
   background-color: whitesmoke;
@@ -168,34 +168,34 @@ body {
   bottom: 24px;
 }
 
- /*fin navbar*/
+/*fin navbar*/
 
 h1 {
   color: #fff;
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Space Mono', monospace;
+  font-family: "Roboto", sans-serif;
+  font-family: "Space Mono", monospace;
   text-align: center;
   font-size: 26px;
   margin-bottom: 40px;
 }
 
-    /*debut container*/
+/*debut container*/
 .container {
-    height: 58vh;
-    width: auto;
-    background-image: url("../assets/fond-captain.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex; 
-    z-index: 1; 
+  height: 58vh;
+  width: auto;
+  background-image: url("../assets/fond-captain.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  z-index: 1;
 }
 
 #imgCaptainQuizz1 {
-    width: 15%;
+  width: 15%;
 }
 
-  /*start-button*/
+/*start-button*/
 .questionQuizz1 {
   width: 100%;
   text-align: center;
@@ -221,8 +221,8 @@ h1 {
   text-decoration: none;
   overflow: hidden;
   z-index: 1;
-  font-family: 'Oswald', sans-serif;
-  font-family: 'Space Mono', monospace;
+  font-family: "Oswald", sans-serif;
+  font-family: "Space Mono", monospace;
 }
 
 .btn::before {
@@ -234,7 +234,7 @@ h1 {
   height: 100%;
   background-color: rgb(213, 26, 34);
   transform: translateX(-100%);
-  transition: all .3s;
+  transition: all 0.3s;
   z-index: -1;
 }
 
@@ -242,33 +242,27 @@ h1 {
   transform: translateX(0);
 }
 
-    /*end button*/
+/*end button*/
 
-    footer {
-      position: fixed;
-      bottom: 0;
-      right: 0;
-  }
-  
-  
-  .footerLinks {
-  
-      padding: 20px;
-      transition: all .2s ease-in-out;
-  }
-  
-  
-  .insta:hover {
-      transform: scale(1.5);
-  }
-  
-  
-  .faceB:hover {
-      transform: scale(1.5);
-  }
-  
-  
-  .twit:hover {
-      transform: scale(1.5);
-  }
- 
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.footerLinks {
+  padding: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.insta:hover {
+  transform: scale(1.5);
+}
+
+.faceB:hover {
+  transform: scale(1.5);
+}
+
+.twit:hover {
+  transform: scale(1.5);
+}
