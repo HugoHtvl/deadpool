@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap%22");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300&display=swap%22");
+
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +18,6 @@ body {
 }
 
 
-
 .header {
     margin: 20px;
     height: 50px;
@@ -24,6 +27,7 @@ body {
     justify-content: space-between;
     padding: 10px;
 }
+
 
 .header img {
     z-index: 3;
@@ -46,7 +50,6 @@ body {
     color: white;
     cursor: pointer;
     transition: 0.4s transform linear;
-
 }
 
 
@@ -66,21 +69,24 @@ body {
     position: fixed;
 }
 
+
 .navbar.active {
     transform: initial;
 }
+
 
 .menuderoulant {
     padding: 0;
     margin: 0;
     list-style: none;
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
     margin-top: 24px;
     margin-bottom: 24px;
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     background-color: rgba(182, 182, 182, 0.2);
 }
+
 
 .navbar li {
     background-color: #05161a 0.2;
@@ -91,6 +97,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 
 .navbar li a {
     color: whitesmoke;
@@ -103,9 +110,8 @@ body {
     border: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
-
-
 }
+
 
 .navbar li a svg {
     stroke: whitesmoke;
@@ -113,6 +119,7 @@ body {
     height: 18px;
     margin-right: 16px;
 }
+
 
 .navbar li a:after {
     content: '';
@@ -125,10 +132,12 @@ body {
     transition: 0.3s width ease-in-out;
 }
 
+
 .navbar li a:hover:after {
     width: 100%;
     left: 0;
 }
+
 
 .NavMenu {
     display: flex;
@@ -136,6 +145,7 @@ body {
     align-items: center;
     gap: 60px;
 }
+
 
 .menuOverlay {
     position: fixed;
@@ -147,9 +157,11 @@ body {
     display: none;
 }
 
+
 .menuOverlay.active {
     display: block;
 }
+
 
 .navbarClose {
     z-index: 2;
@@ -163,7 +175,6 @@ body {
     right: 2%;
     top: 0;
     bottom: 24px;
-
 }
 
 
@@ -186,6 +197,7 @@ main h1 {
     background-repeat: no-repeat;
     background-position: center;
 }
+
 
 .container {
     background-repeat: no-repeat;
@@ -247,7 +259,6 @@ footer {
 
 
 .footerLinks {
-
     padding: 20px;
     transition: all .2s ease-in-out;
 }
