@@ -7,11 +7,12 @@
 body {
     background-color: rgb(5,22,26);
     margin: 0;
-    height: 50vh;
+    height: 10vh;
     width: auto;
+    overflow-y: hidden;
 } 
 
-/* nav bar de Nayan */
+/* DEBUT NAVBAR */
 .header {
     margin: 20px;
     height: 50px;
@@ -44,7 +45,6 @@ body {
     transition: 0.4s transform linear;
   }
   
-  /* ICI */
   .navbar {
     position: fixed;
     top: 0;
@@ -99,8 +99,6 @@ body {
     border: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
-  
-  
   }
   
   .navbar li a svg {
@@ -161,6 +159,8 @@ body {
     bottom: 24px;
   }
 
+  /*FIN NAVBAR*/
+
 h1 {
     color: whitesmoke;
     display: flex;
@@ -170,34 +170,41 @@ h1 {
 }
 
 p {
-    
-    height :75px;
+    height :115px;
     width: 400px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
     color: whitesmoke;
     font-family: 'Roboto', sans-serif;
     font-family: 'Space Mono', monospace;
-    margin-left: 34%;
-    margin-top: 15px;
+    font-size: 20px;   
+    margin-top: 10px;
     border-left: 3px whitesmoke solid;
     border-right: 3px whitesmoke solid;
-    padding-left: 10px;
+    padding-left: 20px;
+    
 }
 
- /*image deadpool*/
-#deadpool{
+  /*IMAGE DEADPOOL*/
+
+/*#deadpool{
     width: 15%;
     float: right;
     margin-right: 220px;
     margin-bottom: 52px;
-}
+}*/
 
-/*button REESSAYER*/
+  /*BUTTON REESSAYER*/
+
 .container {
-  margin-left: 420px;
+  height: 100px;
+  /*margin-left: 420px;*/
   margin-top: 0;
-  padding: 15%;
+  padding-top: 100px;
   display: flex;
   justify-content: center;
+  margin-bottom: 15px;
 }
 
 .c-button {
@@ -267,30 +274,26 @@ p {
   transform: scale(1.4) translateY(0) translateZ(0);
 }
 
-/*FOOTER*/
+  /*FOOTER*/
+
 footer {
   position: fixed;
   bottom: 0;
   right: 0;
 }
 
-
 .footerLinks {
-
   padding: 20px;
   transition: all .2s ease-in-out;
 }
-
 
 .insta:hover {
   transform: scale(1.5);
 }
 
-
 .faceB:hover {
   transform: scale(1.5);
 }
-
 
 .twit:hover {
   transform: scale(1.5);
