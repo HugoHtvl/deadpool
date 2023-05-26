@@ -241,6 +241,7 @@ a {
 
 #Multivers {
   font-style: italic;
+  font-size: large;
 }
 
 .textAccueil {
@@ -458,6 +459,7 @@ footer ul li {
 }
 /* fin boutton scroll*/
 
+/* responsive */
 @media screen and (max-width: 900px) {
   #mcu {
     margin: 10%;
@@ -465,27 +467,15 @@ footer ul li {
 
   .header img {
     z-index: 3;
-    max-height: 80px;
-    margin: 50px 0px 0px 0px;
+    max-height: 50px;
+    margin: 0px 0px 0px 0px;
     border: 10px;
     padding: 20px;
     cursor: pointer;
   }
 
   #section05 a span {
-    position: absolute;
     top: 40%;
-    left: 50%;
-    width: 24px;
-    height: 24px;
-    margin-left: -12px;
-    border-left: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    -webkit-animation: sdb05 1.5s infinite;
-    animation: sdb05 1.5s infinite;
-    box-sizing: border-box;
   }
 
   #textWhite {
@@ -496,18 +486,35 @@ footer ul li {
     height: 50vh;
   }
 
+  #fondNoir {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  #tour-reverse {
+    height: 50vh;
+  }
+
   header #logo {
     margin-top: 5px;
   }
 
   h4 {
     font-size: 20px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    text-align: justify;
   }
 }
 
 @media screen and (max-width: 600px) {
+  #deadpoolAccueil {
+    margin-bottom: 60px;
+  }
+
   #mcu {
-    margin-top: 20%;
+    flex-direction: column;
+    margin-top: 5%;
   }
 
   #textWhite {
@@ -515,17 +522,50 @@ footer ul li {
   }
 
   #tour {
-    height: 25vh;
+    height: 30vh;
   }
 
   header #logo {
     margin-top: 5px;
+  }
+
+  #deadpoolAccueil {
+    margin-top: 30px;
+  }
+
+  #fondNoir {
+    margin-top: 80vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  #section05 a span {
+    top: 91vh;
+  }
+
+  h4 {
+    margin-left: 10vw;
+    margin-right: 10vw;
   }
 }
 
 @media screen and (max-width: 400px) {
   #mcu {
-    margin-top: 20%;
+    flex-direction: column;
+    margin: 10%;
+  }
+
+  .header img {
+    z-index: 3;
+    max-height: 50px;
+    margin: 0px 0px 0px 0px;
+    border: 10px;
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  #section05 a span {
+    top: 120vh;
   }
 
   #textWhite {
@@ -533,10 +573,53 @@ footer ul li {
   }
 
   #tour {
-    height: 25vh;
+    height: 70vh;
+  }
+
+  #deadpoolAccueil {
+    margin-top: 30px;
+  }
+
+  #fondNoir {
+    margin-top: 60vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  #tour-reverse {
+    height: 70vh;
+    background-position: right;
   }
 
   header #logo {
     margin-top: 5px;
   }
+
+  h4 {
+    font-size: 20px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: justify;
+  }
 }
+
+@media screen and (max-width: 400px) and (max-height: 650px) {
+  #fondNoir {
+    margin-top: 60vh;
+  }
+
+  #section05 a span {
+    top: 120vh;
+  }
+}
+
+@media screen and (max-width: 400px) and (max-height: 850px) {
+  #fondNoir {
+    margin-top: 40vh;
+  }
+
+  #section05 a span {
+    top: 100vh;
+  }
+}
+/* fin du responsive */
