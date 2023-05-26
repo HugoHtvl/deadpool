@@ -179,21 +179,21 @@ main h1 {
 .mainimage {
     height: 58vh;
     width: auto;
-    background-image: url("/assets/fond-marvel-quizz.jpg");
+    background-image: url("/assets/imagesLibresDroit/poulette.jpg");
     background-size: cover;
     text-align: center;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.container {
+/* .container {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-}
+} */
 
 
-.questionQuizz2 {
+.questionQuizz5 {
     text-align: center;
     border-spacing: 2rem;
 }
