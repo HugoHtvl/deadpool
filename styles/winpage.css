@@ -208,7 +208,7 @@ p { font-size: 50px;
 
 #verticalBarreLeft {
   width: 3px; /* largeur de la ligne */
-  height: 400px; /* hauteur de la ligne */
+  height: 800px; /* hauteur de la ligne */
   background-color: white; /* couleur de la ligne */
   margin-left: 100px;
   margin-top: 200px;
@@ -218,7 +218,7 @@ p { font-size: 50px;
 
 #verticalBarreRight {
   width: 2.5px; /* largeur de la ligne */
-  height: 400px; /* hauteur de la ligne */
+  height: 800px; /* hauteur de la ligne */
   background-color: white; /* couleur de la ligne */
   margin-top: 200px;
   position: absolute;
@@ -293,8 +293,4 @@ footer {
   transform: scale(1.5);
 }
 
-@media screen and (max-width: 600px) {
-  .aboutUs {
-    display: flex;
-  }
-}
+
