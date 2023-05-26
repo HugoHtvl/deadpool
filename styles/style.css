@@ -1,24 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300&display=swap");
 
-@media screen and (max-width: 414px) {
-  #mcu {
-    margin-top: 20%;
-  }
-
-  #textWhite {
-    text-align: justify;
-  }
-
-  #tour {
-    height: 25vh;
-  }
-
-  header #logo {
-    margin-top: 5px;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -88,7 +70,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
   /* background: black;
@@ -236,13 +218,14 @@ a {
     ),
     url(../assets/tour-accueil-flou-reverse.png);
   width: 100%;
-  height: 100vh;
+  height: 101vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
 }
 
 #mcu {
+  margin-left: 50px;
   display: flex;
   /*grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
@@ -259,6 +242,7 @@ a {
 
 #Multivers {
   font-style: italic;
+  font-size: large;
 }
 
 .textAccueil {
@@ -287,8 +271,8 @@ h3 {
 h4 {
   color: #ffffff;
   font-family: "Oswald", sans-serif;
-  margin: 20px 0 0 0;
-  font-size: 30px;
+  margin: 20px 50px 0 50px;
+  font-size: 25px;
   text-align: center;
   margin-top: 20%;
 }
@@ -432,6 +416,7 @@ footer ul li {
 #section05 a {
   padding-top: 70px;
 }
+
 #section05 a span {
   position: absolute;
   top: 80%;
@@ -474,3 +459,168 @@ footer ul li {
   }
 }
 /* fin boutton scroll*/
+
+/* responsive */
+@media screen and (max-width: 900px) {
+  #mcu {
+    margin: 10%;
+  }
+
+  .header img {
+    z-index: 3;
+    max-height: 50px;
+    margin: 0px 0px 0px 0px;
+    border: 10px;
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  #section05 a span {
+    top: 40%;
+  }
+
+  #textWhite {
+    text-align: justify;
+  }
+
+  #tour {
+    height: 50vh;
+  }
+
+  #fondNoir {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  #tour-reverse {
+    height: 50vh;
+  }
+
+  header #logo {
+    margin-top: 5px;
+  }
+
+  h4 {
+    font-size: 20px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #deadpoolAccueil {
+    margin-bottom: 60px;
+  }
+
+  #mcu {
+    flex-direction: column;
+    margin-top: 5%;
+  }
+
+  #textWhite {
+    text-align: justify;
+  }
+
+  #tour {
+    height: 30vh;
+  }
+
+  header #logo {
+    margin-top: 5px;
+  }
+
+  #deadpoolAccueil {
+    margin-top: 30px;
+  }
+
+  #fondNoir {
+    margin-top: 80vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  #section05 a span {
+    top: 91vh;
+  }
+
+  h4 {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #mcu {
+    flex-direction: column;
+    margin: 10%;
+  }
+
+  .header img {
+    z-index: 3;
+    max-height: 50px;
+    margin: 0px 0px 0px 0px;
+    border: 10px;
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  #section05 a span {
+    top: 120vh;
+  }
+
+  #textWhite {
+    text-align: justify;
+  }
+
+  #tour {
+    height: 70vh;
+  }
+
+  #deadpoolAccueil {
+    margin-top: 30px;
+  }
+
+  #fondNoir {
+    margin-top: 60vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  #tour-reverse {
+    height: 70vh;
+    background-position: right;
+  }
+
+  header #logo {
+    margin-top: 5px;
+  }
+
+  h4 {
+    font-size: 20px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 400px) and (max-height: 650px) {
+  #fondNoir {
+    margin-top: 60vh;
+  }
+
+  #section05 a span {
+    top: 120vh;
+  }
+}
+
+@media screen and (max-width: 400px) and (max-height: 850px) {
+  #fondNoir {
+    margin-top: 40vh;
+  }
+
+  #section05 a span {
+    top: 100vh;
+  }
+}
+/* fin du responsive */

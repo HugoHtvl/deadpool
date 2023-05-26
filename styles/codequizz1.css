@@ -74,22 +74,18 @@ body {
   transform: initial;
 }
 
-  .menuderoulant {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    font-family: sans-serif;
-    margin-top: 24px;
-    margin-bottom: 24px;
-    /* background: black;
-    backdrop-filter: blur(1.5rem); */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px);
-    background-color: rgba(182, 182, 182, 0.2);
+.menuderoulant {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: sans-serif;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background-color: rgba(182, 182, 182, 0.2);
 }
+
 
 .navbar li {
   background-color: #05161a 0.2;
@@ -196,10 +192,7 @@ h1 {
 }
 
 #imgCaptainQuizz1 {
-  display:block;
-  margin-right: auto;
-  margin-left: auto;
-  width: 200px;
+    width: 15%;
 }
 
   /*start-button*/

@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DEFAITE</title>
-    <link rel="stylesheet" href="styles/Pagedefaite.css" />
+    <title>Question 4</title>
+    <link href="/styles/codequizz4.css" rel="stylesheet">
+    <script src="/javascript/codequizz4.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Space+Mono&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Space+Mono&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Space+Mono&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header class="header">
-        <img src="assets/imagesLibresDroit/logo1.png" alt="">
+        <a href="index.html"><img src="/assets/imagesLibresDroit/logo1.png" alt="logo"></a>
         <div class="headerMenu" onclick="toggleMenu()">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-6 h-6">
@@ -31,7 +35,7 @@
             </svg>
         </div>
         <ul class="menuderoulant">
-            <li><a href="newHomepage.html">
+            <li><a href="index.html">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -39,7 +43,7 @@
                     </svg>
                     Accueil</a></li>
 
-            <li><a href="#">
+            <li><a href="codequizz1.html">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -55,25 +59,32 @@
         </ul>
         <div class="menuOverlay" onclick="toggleMenu()"></div>
     </nav>
-        <h1>DEFAITE</h1>
-        <p>Je me doutais que tu ne serais pas à la hauteur ! Bon qu'à renifler des culs... Réessaie si tu en as le courage</p>
-    
-        <img id= "deadpool" src="assets/imagesLibresDroit/deadpoolCoquin.png" alt="defaite">
-        <div id = "containerR">
-            <button class = "reessayer" onclick="location.href='codequizz1.html'">REESSAYER</button>
+    <main>
+        <h1> COMMENT S'APPELLE LE PAYS D'ORIGINE DE BLACK PANTHER ?</h1>
+        <div class="mainimage">
+            <!-- </div> -->
+            <!-- <div class="blackPantherImg"> -->
+            <img id="imgBlackPanther" src="./assets/imagesLibresDroit/blackpanther.png" alt="Image de Blackpanther">
         </div>
+        <div class="questionQuizz4">
+            <a class="btn" href="#" onclick="location.href='losepage.html'" type="button">Asgard</a>
+            <a class="btn" href="#" onclick="location.href='losepage.html'" type="button">Latvérie </a>
+            <a class="btn" href="#" onclick="location.href='/codequizz5.html'" type="button">Wakanda</a>
+        </div>
+    </main>
+
     <footer>
         <div class="footerLinks">
             <ul>
                 <li class="insta"><a href="https://www.instagram.com/deadpool/?hl=fr"><img
-                            src=assets\imagesLibresDroit\logoInsta.png alt="logo instagram" height="20px"></a></li>
+                            src=assets/imagesLibresDroit/logoInsta.png alt="logo instagram" height="20px"></a></li>
                 <li class="faceB"><a href="https://www.facebook.com/DeadpoolFR/"><img
-                            src=assets\imagesLibresDroit\logoFB.png alt="logo facebook" height="20px"></a></li>
-                <li class="twit"><a href="https://twitter.com/Deadpool"><img src=assets\imagesLibresDroit\logoTwit.png
+                            src=assets/imagesLibresDroit/logoFB.png alt="logo facebook" height="20px"></a></li>
+                <li class="twit"><a href="https://twitter.com/Deadpool"><img src=assets/imagesLibresDroit/logoTwit.png
                             alt="logo twitter" height="20px"></a></li>
             </ul>
         </div>
     </footer>
 </body>
-<script src = "javascript/Pagedefaite.js"></script>
+
 </html>

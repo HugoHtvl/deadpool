@@ -170,17 +170,16 @@ h1 {
 }
 
 p {
-    
-    height :85px;
-    width: 400px;
+    height :200px;
+    width: 550px;
     display: block;
     margin-right: auto;
     margin-left: auto;
     color: whitesmoke;
     font-family: 'Roboto', sans-serif;
     font-family: 'Space Mono', monospace;
-    margin-left: 34%;
-    margin-top: 15px;
+    font-size: 20px;   
+    margin-top: 10px;
     border-left: 3px whitesmoke solid;
     border-right: 3px whitesmoke solid;
     padding-left: 20px;
@@ -189,11 +188,24 @@ p {
 
   /*IMAGE DEADPOOL*/
 
-/*#deadpool{
-    width: 15%;
+#deadpool{
+    width: 100px;
     float: right;
     margin-right: 200px;
-    margin-bottom: 50px;
+    margin-bottom: 52px;
+}
+
+  /*BUTTON REESSAYER*/
+
+.container {
+  height: 100px;
+  margin-left: 250px;
+  margin-top: 0;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+  z-index: ;
 }
 
 .c-button {
